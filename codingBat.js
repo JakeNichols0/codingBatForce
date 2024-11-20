@@ -18,11 +18,11 @@ const check =  setInterval(() => {
     console.log(successes);
     i++;
     console.log(i)
-    if (successes.indexOf("fail") < 0 || i>10) {
+    if (successes.indexOf("fail") < 0 || i>1000) {
         clearInterval(check);
         stop = true;
     }
     if(!stop) {
         button.click();
     }
-}, 1000);
+}, 100);
